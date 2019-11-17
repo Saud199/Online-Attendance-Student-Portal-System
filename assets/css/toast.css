@@ -1,0 +1,41 @@
+/* to show progress bar */
+#toast{
+  position:fixed;
+  top:10%;
+  left:50%;
+  transform:translate(-50%);
+  background-color : rgb(7,215,155);
+  color:#fff;
+  padding:16px;
+  border-radius:4px;
+  text-align:center;
+  z-index:1;
+  
+  visibility:hidden;
+  opacity:0;
+}
+
+#toast.show{
+  visibility:visible;
+  animation:fadeInOut 3s;
+}
+
+@keyframes fadeInOut{
+  25%,65%{opacity:1;top:150px}
+  15%,85%{opacity:1;top:30px}
+}
+
+/*to show progress */
+#myBar {
+    width: 10%;
+    height: 30px;
+    /*background-color: #4CAF50;
+    border: solid thin darkgreen;*/
+    background-color:rgb(7,215,155);
+    border: solid thin black;
+    border-radius:5px; 
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color: white; 
+    visibility: hidden;
+}

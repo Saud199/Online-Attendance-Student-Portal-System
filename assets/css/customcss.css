@@ -1,0 +1,5 @@
+.details_btn:hover{
+    border-radius: 400% !important;
+    border: solid 2px rgb(7, 215, 155);
+    margin: 10px;
+}
